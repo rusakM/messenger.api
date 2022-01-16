@@ -1,0 +1,29 @@
+const port = 3001;
+module.exports = {
+    port,
+    db: {
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database: 'messenger',
+        charset: 'utf8mb4',
+    },
+    links: {
+        api: `http://localhost:${port}`,
+        frontend: 'http://localhost:3000',
+    },
+    mail: {
+        service: 'gmail',
+        auth: {
+            user: 'example@gmail.com',
+            pass: 'password',
+        }
+    },
+    headers: {
+        API: 'Api rusia',
+        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PATCH, DELETE, PUT',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Authorization, Charset, Accept, Origin',
+    },
+    pagination: 25,
+};
